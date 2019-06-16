@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details of user </title>
+</head>
+<body>
+welcome .... 	<span id = "result"></span>
+<script>
+	console.log(localStorage);
+	console.log(localStorage.getItem("textvalue"));
+	// document.getElementByID('result').innerHTML=localStorage.getItem("textvalue");
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="JS/jquery-1.11.1.min.js"></script>
+<link href="CSS/bootstrap.min.css">
+<script src="JS/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">		
+
+<link rel="stylesheet" href="CSS/font-awesome.min.css">
+<link href="CSS/PassionOne.css" rel='stylesheet' type='text/css'>
+<link href="CSS/Oxygen.css" rel='stylesheet' type='text/css'>
+	<link href="CSS/MaterialIcons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="CSS/forms.css" rel="stylesheet">
+<title>My Account</title>
+	<script src="JS/forms.js"></script>
+</head>
+<body >
+	<style type="text/css">
+		body{
+			background: url("giphy.jpg");
+ 			background-repeat: repeat;
+ 			background-size: auto;
+		}
+
+	</style>
+	
+		<div class="container">
+			<div class="row main">
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1><b>My Account</b></h1>
+	               		<hr />
+	               	</div>
+	            </div> 
+	            <div class="container">
+	            <div class="jumbotron">
+	            	<h3><u>User Information</u></h3>
+				<div class="main-login main-center">
+					<form class="form-horizontal"  method="post" action="display.html">
+						</div>
+						<div class="form group">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+							<label for="name" class=" cols-sm- control-label">*User name</label>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uname" id="uname"  placeholder="Nick" required/>
+								</div>
+								
+							</div> 
+							<div class="col-sm-6">
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+							<label for="name" class="cols-sm-6 control-label">*Email Address</label>
+								<div class="input-group col-md-offset-1">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="mname" id="email"  placeholder="Enter your Email Address"/> 
+								</div>
+							</div> 
+							
+						</div>
+							</div>
+							<div class="form group">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+							<label for="name" class=" cols-sm-6 control-label">*First name</label>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="fname" id="fname"  placeholder="Enter your First Name" required/>
+								</div>
+								
+							</div> 
+							<div class="col-sm-6">
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+							<label for="name" class="cols-sm-6 control-label">Last Name</label>
+								<div class="input-group col-md-offset-1">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="lname" id="lname"  placeholder="Enter your Last Name"/> 
+								</div>
+							</div> 
+							
+						</div>
+							</div>
+						</div>
+					<div class=" jumbotron">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+							<label for="name" class="cols-sm-2 control-label">*Gender</label>
+							<div class="cols-sm-10 ">
+								<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-venus-mars" aria-hidden="true"></i></span>
+									<select class="form-control" name="gender" id="gender" required>
+										<option selected disabled>---SELECT---</option>
+       							 <option>Male</option>
+        							<option>Female</option>
+        						<option>Others</option>
+       							
+      						</select>	
+					
+								</div>
+							</div>
+							</div>
+							<div class="col-sm-6 form-group">
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+								<label for="date" class="cols-sm-2 control-label">*Date Of Birth</label>
+							<div class="cols-sm-10 col-md-offset-2">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+									<input type="date" class="form-control" name="dob" id="dob" required/>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6 form-group">
+							<label for="name" class="cols-sm-2 control-label">*State</label>
+							<div class="cols-sm-10">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+						
+	     						 <select class="form-control" id="state" name="state" required>
+									 <option selected disabled>---SELECT---</option>
+	       							 <option>Andhra Pradesh</option>
+	        							<option>Arunachal Pradesh</option>
+	        						<option>Assam</option>
+	       							 <option>Bihar</option>
+									 <option>Chhattisgarh</option>
+									 <option>Delhi</option>
+									 <option>Goa</option>
+									 <option>Gujarat</option>
+									 <option>Haryana</option>
+									 <option>Himachal Pradesh</option>
+									 <option>Jammu & Kashmir</option>
+									 <option>Jharkhand</option>
+									 <option>Karnataka</option>
+									 <option>Kerala</option>
+									 <option>Madhya Pradesh</option>
+									 <option>Maharashtra</option>
+									 <option>Manipur</option>
+									 <option>Meghalaya</option>
+									 <option>Mizoram</option>
+									 <option>Nagaland</option>
+									 <option>Odisha</option>
+									 <option>Punjab</option>
+									 <option>Rajasthan</option>
+									 <option>Sikkim</option>
+									 <option>Tamil Nadu</option>
+									 <option>Telangana</option>
+									 <option>Tripura</option>
+									 <option>Uttarakhand</option>
+									 <option>Uttar Pradesh</option>
+									 <option>West Bengal</option>
+	      						</select>		
+									</div>
+								</div>
+						</div>
+						
+						   
+						
+							<div class="col-sm-6 form-group">
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+							<label for="number" class="cols-sm-2 control-label">*Pin Code</label>
+							<div class="cols-sm-10 col-md-offset-2">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-street-view" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="pin" id="pin" maxlength="6" pattern="(?=.*[0-9]).{6,}" required/>
+								</div>
+								</div>
+						</div>
+						</div>
+					</div>
+					<div class=" jumbotron">
+						<div class="form-group">
+							<label for="number" class="cols-sm-2 control-label">*Address</label>
+							<div class="cols-sm-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="district" id="district" maxlength="12" placeholder="Enter your Address" required/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="number" class="cols-sm-2 control-label">*Mobile Number</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="mobile" id="mobile" maxlength="10" pattern="(?=.*[0-9]).{10,}" placeholder="(+91)" required/>
+								</div>
+								</div>
+						</div>
+						
+					</div>
+					</div>
+
+</body>
+</html>
